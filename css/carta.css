@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #fef6e4;
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif;
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 1rem;
+}
+
+button {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #497a3d;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../imagen/carta1.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    height: 70vh;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.hero-overlay button {
+    background-color: #497a3d;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.hero-overlay button:hover {
+    background-color: #6a3a25;
+}
+
+/* Menu Intro Section */
+.menu-intro {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f2e1b3;
+}
+
+.menu-intro button {
+    background-color: #6a3a25;
+    color: white;
+    padding: 10px 20px;
+}
+
+.menu-intro button:hover {
+    background-color: #854c2f;
+}
+
+/* Tradiciones Section */
+.tradiciones {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #497a3d;
+    color: white;
+}
+
+.tradiciones-image {
+    margin-top: 20px;
+    background-image: url('../imagen/carta1.2.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    max-width: 100%;
+}
+
+/* Locales Section */
+.locales {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.locales h2, p {
+   color: black;
+}
+
+
+.locales-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.local {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.local img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #854c2f;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .locales-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

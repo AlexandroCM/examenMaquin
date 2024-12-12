@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #fdf7e3;
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif;
+    color: #6a3a25;
+}
+
+p {
+    color: #333;
+}
+
+button {
+    background-color: #497a3d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #6a3a25;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #854c2f;
+    color: white;
+}
+
+.header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover, .nav a.active {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../imagen/nosotros1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.hero-text p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+button.hero-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #f7e5c8;
+    gap: 30px;
+}
+
+.about .content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.about .content h2 {
+    margin-bottom: 15px;
+}
+
+.about .image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button.about-btn {
+    margin-top: 15px;
+}
+
+/* Locals Section */
+.locals {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.locals h2 {
+    color: #fdf7e3;
+    font-family: 'Georgia', serif;
+    margin-bottom: 30px;
+}
+
+.locals-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.local-item {
+    max-width: 150px;
+    text-align: center;
+}
+
+.local-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.local-item p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+button.more-btn {
+    margin-top: 20px;
+    background-color: #6a3a25;
+    padding: 10px 30px;
+    font-size: 1rem;
+}
+
+/* Traditions Section */
+.traditions {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #497a3d;
+    color: white;
+}
+
+.traditions h2 {
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif;
+}
+
+.traditions p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+.traditions .video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.traditions .video-container img {
+    width: 100%;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #854c2f;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.footer span {
+    font-style: italic;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .content {
+        max-width: 100%;
+    }
+
+    .locals-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .traditions .video-container {
+        width: 100%;
+    }
+}
